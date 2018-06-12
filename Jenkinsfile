@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver') {
             steps{
-                sh 'java -jar build/libs/gs-accessing-data-jpa-0.1.0.jar'
+                echo '***************DELIVERED**************'
         
             }
         }
