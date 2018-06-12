@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver') {
             steps{
-                sh 'docker run -p 8080:8080 -t pairio/gs-accessing-data-jpa'
+                sh 'java -jar build/libs/gs-accessing-data-jpa-0.1.0.jar'
         
             }
         }
