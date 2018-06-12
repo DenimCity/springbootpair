@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'openjkd:8-jdk-alpine'
+            image 'openjdk:8-jdk-alpine'
             args 'JAR_FILE'
         }
     }
